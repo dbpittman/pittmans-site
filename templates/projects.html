@@ -518,19 +518,19 @@ main > section:first-child{padding-top:88px}
 <section id="projects">
   <div class="wrap">
     <div class="eyebrow reveal"><span class="shno">A-04</span>Selected work</div>
-    <h1 class="reveal">The proof is<br>standing.</h1>
-    <p class="lede reveal">A sample from four and a half decades of building across Newfoundland and Labrador.</p>
+    <h1 class="reveal">{{PROJ_H1}}<br>{{PROJ_H2}}</h1>
+    <p class="lede reveal">{{PROJ_LEDE}}</p>
 
     <div class="projects">
 {{PROJECTS}}
     </div>
     <div class="record-band reveal" id="record">
       <div class="record-head">
-        <div class="rt">The Record <span>· 1978 – Present</span></div>
-        <div class="rh">Scroll →&nbsp; More added as the archive is photographed</div>
+        <div class="rt">{{REC_TITLE}} <span>{{REC_RANGE}}</span></div>
+        <div class="rh">{{REC_HINT}}</div>
       </div>
       <div class="record-strip">
-        <div class="rec first"><div class="ry">1978</div><div class="rn">St. Paul's, Gros Morne.<br>Where it started.</div></div>
+        <div class="rec first"><div class="ry">{{REC_FIRST_YEAR}}</div><div class="rn">{{REC_FIRST_LABEL}}</div></div>
 {{RECORD}}
       </div>
     </div>
@@ -541,7 +541,7 @@ main > section:first-child{padding-top:88px}
   <div class="wrap">
     <div class="eyebrow reveal"><span class="shno">A-06</span>Contact</div>
     <div class="contact-in reveal">
-      <div class="big">Building something? Call the contractor that's been doing it since 1978.</div>
+      <div class="big">{{CONTACT_HEADING}}</div>
       <div class="contact-list">
         EMAIL: <a href="mailto:{{EMAIL}}">{{EMAIL}}</a><br>
         PHONE: <a href="tel:+1{{PHONE_DIGITS}}">{{PHONE}}</a><br>
@@ -555,9 +555,9 @@ main > section:first-child{padding-top:88px}
 
 <footer>
   <div class="foot-in">
-    <div>© 2026 PITTMAN'S ENTERPRISES LIMITED</div>
-    <div>CIVIL · ARCHITECTURAL · ELECTRICAL</div>
-    <div>SHEET A-01 · END OF DRAWINGS</div>
+    <div>{{FOOT_L}}</div>
+    <div>{{FOOT_M}}</div>
+    <div>{{FOOT_R}}</div>
   </div>
 </footer>
 

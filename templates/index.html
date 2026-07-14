@@ -522,19 +522,16 @@ main > section:first-child{padding-top:88px}
         </svg>
         <img src="images/img-03-fc36aa75c6.png" alt="Pittman's Enterprises Limited" style="width:min(210px,60%);height:auto;display:block;margin:0 0 38px">
         
-        <h1><span class="lt">Quality,</span><br><span class="lt">from the</span><br><em>ground up.</em></h1>
-        <p class="lede">Building Newfoundland &amp; Labrador since 1978.</p>
+        <h1>{{HERO_L1}}<br><span class="lt">{{HERO_L2}}</span><br><em>{{HERO_L3}}</em></h1>
+        <p class="lede">{{HERO_SUB}}</p>
                 <div class="sheet-cta">
-          <a class="btn solid" href="#contact">Start a conversation</a>
-          <a class="btn" href="projects.html">See the work</a>
+          <a class="btn solid" href="#contact">{{BTN1}}</a>
+          <a class="btn" href="projects.html">{{BTN2}}</a>
         </div>
         
       </div>
       <div class="titleblock">
-        <div class="tb"><div class="l">Established</div><div class="v">1978</div></div>
-        <div class="tb"><div class="l">Completed</div><div class="v">300+ Projects</div></div>
-        <div class="tb"><div class="l">Divisions</div><div class="v">Civil · Arch. · Electrical</div></div>
-        <div class="tb"><div class="l">Status</div><div class="v">Issued for Construction</div></div>
+{{TITLEBLOCK}}
       </div>
     </div>
   </div>
@@ -553,15 +550,10 @@ main > section:first-child{padding-top:88px}
 <section id="sectors">
   <div class="wrap">
     <div class="eyebrow reveal"><span class="shno">A-02</span>What we build</div>
-    <h2 class="reveal">Heavy civil to<br>architectural to energized.</h2>
-    <p class="lede reveal">Few contractors carry an institutional building portfolio, a heavy civil fleet, and a licensed electrical division under one roof. We carry all three, and self-perform across them.</p>
+    <h2 class="reveal">{{SEC_H1}}<br>{{SEC_H2}}</h2>
+    <p class="lede reveal">{{SEC_LEDE}}</p>
     <div class="sectors reveal">
-      <div class="sector"><img src="images/img-04-eb3911757f.jpg" alt="Timber lookout structure at Seven Corners"><div class="sb"><div class="k">Institutional</div><h3>Architectural Building</h3><p>Performing arts centres, schools, arenas, and public buildings. Turnkey general contracting in steel, wood, and masonry, including Behlen pre-engineered steel buildings.</p></div></div>
-      <div class="sector"><img src="images/img-05-56b22f22d0.jpg" alt="John Deere 350P excavator in the Pittmans fleet"><div class="sb"><div class="k">Civil</div><h3>Heavy Civil &amp; Earthworks</h3><p>Bulk excavation, roads, site development, and structural fills. If dirt or rock needs moving, we move it. Any quantity, anywhere.</p></div></div>
-      <div class="sector"><img src="images/img-06-b8e194c7c6.jpg" alt="Long reach excavator on coastal marine works"><div class="sb"><div class="k">Marine</div><h3>Marine Infrastructure</h3><p>Wharves, dredging, and marine concrete, with a specialty in breakwaters and coastal protection.</p></div></div>
-      <div class="sector"><img src="images/img-07-d440966685.jpg" alt="Commercial electrical installation" style="filter:saturate(.55) contrast(1.05) brightness(.92)"><div class="sb"><div class="k">Power</div><h3>Electrical</h3><p>Licensed commercial and industrial electrical contracting in-house: services, distribution, and building systems.</p></div></div>
-      <div class="sector"><img src="images/img-08-cf6fa99eef.jpg" alt="Crushed rock pad produced by Pittmans"><div class="sb"><div class="k">Aggregate</div><h3>Blasting &amp; Crushing</h3><p>We drill, blast, crush and deliver aggregates to keep your projects on time and on track.</p></div></div>
-      <div class="sector"><img src="images/img-09-bc1633392d.jpg" alt="Remote exploration camp on crushed pad"><div class="sb"><div class="k">Remote</div><h3>Mining &amp; Remote Sites</h3><p>Camps, pads, and access development wherever the client needs us. If you can point to it on a map, we can build on it.</p></div></div>
+{{DIVISION_CARDS}}
     </div>
       </div>
 </section>
@@ -569,11 +561,11 @@ main > section:first-child{padding-top:88px}
 <section id="flagship">
   <div class="wrap">
     <div class="eyebrow reveal"><span class="shno">A-04</span>Selected work</div>
-    <h2 class="reveal">The proof is standing.</h2>
+    <h2 class="reveal">{{PROJ_H1}} {{PROJ_H2}}</h2>
     <div class="projects">
       {{FLAGSHIP}}
     </div>
-    <div class="see-all reveal"><a class="btn" href="projects.html">See all projects</a></div>
+    <div class="see-all reveal"><a class="btn" href="projects.html">{{SEE_ALL}}</a></div>
   </div>
 </section>
 
@@ -581,7 +573,7 @@ main > section:first-child{padding-top:88px}
   <div class="wrap">
     <div class="eyebrow reveal"><span class="shno">A-06</span>Contact</div>
     <div class="contact-in reveal">
-      <div class="big">Building something? Call the contractor that's been doing it since 1978.</div>
+      <div class="big">{{CONTACT_HEADING}}</div>
       <div class="contact-list">
         EMAIL: <a href="mailto:{{EMAIL}}">{{EMAIL}}</a><br>
         PHONE: <a href="tel:+1{{PHONE_DIGITS}}">{{PHONE}}</a><br>
@@ -595,9 +587,9 @@ main > section:first-child{padding-top:88px}
 
 <footer>
   <div class="foot-in">
-    <div>© 2026 PITTMAN'S ENTERPRISES LIMITED</div>
-    <div>CIVIL · ARCHITECTURAL · ELECTRICAL</div>
-    <div>SHEET A-01 · END OF DRAWINGS</div>
+    <div>{{FOOT_L}}</div>
+    <div>{{FOOT_M}}</div>
+    <div>{{FOOT_R}}</div>
   </div>
 </footer>
 

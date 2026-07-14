@@ -1,0 +1,36 @@
+{
+  "heading": "Measured. Modelled. Built.",
+  "lede": "From GPS machine control to underwater ROVs, we run a technology stack few contractors in the country can match. Not for show: it works on every Pittmans site, every day.",
+  "rows": [
+    {
+      "no": "T-01",
+      "name": "GPS Machine Control",
+      "desc": "Excavators and dozers cut directly to the 3D design surface. No stakes, no rework, no waiting on grade checks."
+    },
+    {
+      "no": "T-02",
+      "name": "Robotic Total Station",
+      "desc": "Millimetre layout and as-built verification on structures, wharves, and steel. Survey-grade control, one operator."
+    },
+    {
+      "no": "T-03",
+      "name": "Autonomous Marine Survey Vessel",
+      "desc": "Unmanned hydrographic survey of seabeds, channels, and berths. Dredge volumes and clearances measured, not estimated."
+    },
+    {
+      "no": "T-04",
+      "name": "Underwater ROV",
+      "desc": "Subsea inspection of piles, cribwork, and structures without putting divers in the water. Video record before, during, and after."
+    },
+    {
+      "no": "T-05",
+      "name": "Drone Photogrammetry",
+      "desc": "Site-wide topography and volumetrics in hours, not weeks. Progress mapped and quantities proven every cycle."
+    },
+    {
+      "no": "T-06",
+      "name": "3D & Dynamic Structural Modelling",
+      "desc": "Constructability, clash detection, and load behaviour modelled before mobilization. Problems get solved on screen, not on your schedule."
+    }
+  ]
+}

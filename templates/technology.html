@@ -518,16 +518,12 @@ main > section:first-child{padding-top:88px}
 <section id="tech">
   <div class="wrap">
     <div class="eyebrow reveal"><span class="shno">A-03</span>Survey &amp; Technology</div>
-    <h1 class="reveal">Measured. Modelled. Built.</h1>
-    <p class="lede reveal">From GPS machine control to underwater ROVs, we run a technology stack few contractors in the country can match. Not for show: it works on every Pittmans site, every day.</p>
+    <h1 class="reveal">{{TECH_HEADING}}</h1>
+    <p class="lede reveal">{{TECH_LEDE}}</p>
     <div class="sched reveal">
       <div class="sched-row head"><div>No.</div><div>Technology</div><div>What it does for your project</div></div>
-      <div class="sched-row"><div class="sc-no">T-01</div><div class="sc-name">GPS Machine Control</div><div class="sc-desc">Excavators and dozers cut directly to the 3D design surface. No stakes, no rework, no waiting on grade checks.</div></div>
-      <div class="sched-row"><div class="sc-no">T-02</div><div class="sc-name">Robotic Total Station</div><div class="sc-desc">Millimetre layout and as-built verification on structures, wharves, and steel. Survey-grade control, one operator.</div></div>
-      <div class="sched-row"><div class="sc-no">T-03</div><div class="sc-name">Autonomous Marine Survey Vessel</div><div class="sc-desc">Unmanned hydrographic survey of seabeds, channels, and berths. Dredge volumes and clearances measured, not estimated.</div></div>
-      <div class="sched-row"><div class="sc-no">T-04</div><div class="sc-name">Underwater ROV</div><div class="sc-desc">Subsea inspection of piles, cribwork, and structures without putting divers in the water. Video record before, during, and after.</div></div>
-      <div class="sched-row"><div class="sc-no">T-05</div><div class="sc-name">Drone Photogrammetry</div><div class="sc-desc">Site-wide topography and volumetrics in hours, not weeks. Progress mapped and quantities proven every cycle.</div></div>
-      <div class="sched-row"><div class="sc-no">T-06</div><div class="sc-name">3D &amp; Dynamic Structural Modelling</div><div class="sc-desc">Constructability, clash detection, and load behaviour modelled before mobilization. Problems get solved on screen, not on your schedule.</div></div>
+{{TECH_ROWS}}
+    </div>
     </div>
   </div>
 </section>
@@ -536,7 +532,7 @@ main > section:first-child{padding-top:88px}
   <div class="wrap">
     <div class="eyebrow reveal"><span class="shno">A-06</span>Contact</div>
     <div class="contact-in reveal">
-      <div class="big">Building something? Call the contractor that's been doing it since 1978.</div>
+      <div class="big">{{CONTACT_HEADING}}</div>
       <div class="contact-list">
         EMAIL: <a href="mailto:{{EMAIL}}">{{EMAIL}}</a><br>
         PHONE: <a href="tel:+1{{PHONE_DIGITS}}">{{PHONE}}</a><br>
@@ -550,9 +546,9 @@ main > section:first-child{padding-top:88px}
 
 <footer>
   <div class="foot-in">
-    <div>© 2026 PITTMAN'S ENTERPRISES LIMITED</div>
-    <div>CIVIL · ARCHITECTURAL · ELECTRICAL</div>
-    <div>SHEET A-01 · END OF DRAWINGS</div>
+    <div>{{FOOT_L}}</div>
+    <div>{{FOOT_M}}</div>
+    <div>{{FOOT_R}}</div>
   </div>
 </footer>
 
