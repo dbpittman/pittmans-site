@@ -111,6 +111,6 @@ for (const f of fs.readdirSync('templates')) {
   console.log('built', f);
 }
 
-for (const f of ['robots.txt', 'sitemap.xml', 'llms.txt']) fs.copyFileSync(f, path.join('dist', f));
+for (const f of ['robots.txt', 'sitemap.xml', 'llms.txt', 'CNAME']) fs.copyFileSync(f, path.join('dist', f));
 fs.cpSync('images', 'dist/images', { recursive: true });
 console.log('build complete');
