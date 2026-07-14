@@ -4,10 +4,14 @@ backend:
   branch: main
   base_url: https://api.netlify.com
 
-media_folder: "images/uploads"
-public_folder: "images/uploads"
+media_folder: "images"
+public_folder: "/images"
 
 site_url: https://pittmans.ca
+logo_url: /images/img-03-fc36aa75c6.png
+
+editor:
+  preview: false
 
 collections:
   - name: "record"

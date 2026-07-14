@@ -10,7 +10,7 @@
         "PERFORMING ARTS",
         "GROS MORNE"
       ],
-      "image": "images/img-10-ad274973e0.jpg",
+      "image": "/images/img-10-ad274973e0.jpg",
       "alt": "Nurse Myra Bennett Centre for the Performing Arts, built by Pittmans",
       "flagship": true
     },
@@ -24,7 +24,7 @@
         "PARKS & PUBLIC",
         "GROS MORNE"
       ],
-      "image": "images/img-18-bdcac80dee.jpg",
+      "image": "/images/img-18-bdcac80dee.jpg",
       "alt": "Bonne Bay framed through the timber viewing aperture at Seven Corners, built by Pittmans",
       "flagship": false
     },
@@ -38,7 +38,7 @@
         "RECREATION",
         "INSTITUTIONAL"
       ],
-      "image": "images/img-19-007c9b9bd3.jpg",
+      "image": "/images/img-19-007c9b9bd3.jpg",
       "alt": "School built new by Pittmans, full building elevation",
       "flagship": false
     },
@@ -52,7 +52,7 @@
         "STRUCTURAL CONCRETE",
         "COASTAL LABRADOR"
       ],
-      "image": "images/img-20-8001a87fb6.jpg",
+      "image": "/images/img-20-8001a87fb6.jpg",
       "alt": "Pittmans long reach excavator on coastal marine works at sunset",
       "flagship": false
     },
@@ -66,7 +66,7 @@
         "ROADS",
         "UNDERGROUND SERVICES"
       ],
-      "image": "images/img-21-5ccd98b173.jpg",
+      "image": "/images/img-21-5ccd98b173.jpg",
       "alt": "Pittmans crew installing underground municipal services with GPS-equipped excavator",
       "flagship": false
     },
@@ -80,7 +80,7 @@
         "CAMP INSTALL",
         "MINING SUPPORT"
       ],
-      "image": "images/img-22-07dc5588cf.jpg",
+      "image": "/images/img-22-07dc5588cf.jpg",
       "alt": "Exploration camp and crushed rock pad built by Pittmans in coastal Labrador",
       "flagship": false
     }
