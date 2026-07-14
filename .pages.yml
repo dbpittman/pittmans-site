@@ -4,7 +4,7 @@ media:
 
 content:
   - name: home
-    label: "Page: Home"
+    label: "Home · Hero & titleblock"
     type: file
     path: content/home.json
     fields:
@@ -28,7 +28,7 @@ content:
       - { name: see_all, label: "See-all-projects button", type: string }
 
   - name: wwb
-    label: "Page: What We Build"
+    label: "What We Build · Headings & Why block"
     type: file
     path: content/what-we-build.json
     fields:
@@ -52,7 +52,7 @@ content:
               - { name: body, label: Body, type: text }
 
   - name: divisions
-    label: "Page: What We Build · Divisions (also home cards)"
+    label: "Home cards & What We Build · The six divisions"
     type: file
     path: content/divisions.json
     fields:
@@ -74,7 +74,7 @@ content:
           - { name: img_style, label: "Large photo style (advanced, leave alone)", type: string, required: false }
 
   - name: tech
-    label: "Page: Technology"
+    label: "Technology · Schedule"
     type: file
     path: content/tech.json
     fields:
@@ -90,7 +90,7 @@ content:
           - { name: desc, label: "What it does for your project", type: text }
 
   - name: projpage
-    label: "Page: Projects"
+    label: "Projects · Page headings & Record labels"
     type: file
     path: content/projects-page.json
     fields:
@@ -104,7 +104,7 @@ content:
       - { name: record_first_label, label: "Record first card label", type: string }
 
   - name: projects
-    label: "Page: Projects · Entries"
+    label: "Projects · Entries (flagship shows on Home)"
     type: file
     path: content/projects.json
     fields:
@@ -120,10 +120,10 @@ content:
           - { name: tags, label: Tags, type: string, list: true }
           - { name: image, label: Photo, type: image }
           - { name: alt, label: "Image description", type: string, required: false }
-          - { name: flagship, label: "Flagship (featured on home page)", type: boolean, default: false }
+          - { name: flagship, label: "Flagship: featured full-width on the Home page", type: boolean, default: false }
 
   - name: record
-    label: "Page: Projects · The Record (archive photos)"
+    label: "Projects · The Record (archive photos)"
     type: file
     path: content/record.json
     fields:
@@ -138,7 +138,7 @@ content:
           - { name: alt, label: "Image description", type: string, required: false }
 
   - name: global
-    label: "Every page: contact & footer"
+    label: "Every page · Contact & footer"
     type: file
     path: content/global.json
     fields:
