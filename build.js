@@ -6,13 +6,21 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
 const read = p => fs.readFileSync(p, 'utf8');
 const json = p => JSON.parse(read(p));
 
-const settings  = json('content/settings.json');
+const home      = json('content/home.json');
+const wwb       = json('content/what-we-build.json');
+const projPage  = json('content/projects-page.json');
+const glob      = json('content/global.json');
 const projects  = json('content/projects.json').items;
 const record    = json('content/record.json').items;
 const divisions = json('content/divisions.json').items;
 const tech      = json('content/tech.json');
-const why       = json('content/why.json');
-const pages     = json('content/pages.json');
+const why       = wwb.why;
+const pages     = { hero: home.hero,
+                    sectors: wwb,
+                    projects_page: Object.assign({ see_all: home.see_all }, projPage),
+                    contact: { heading: glob.contact_heading },
+                    footer: glob.footer };
+const settings  = glob;
 
 const projectHTML = (p, flag) => `      <article class="project${flag ? ' flag' : ''} reveal">
         <div class="p-img">
@@ -105,5 +113,4 @@ for (const f of fs.readdirSync('templates')) {
 
 for (const f of ['robots.txt', 'sitemap.xml', 'llms.txt']) fs.copyFileSync(f, path.join('dist', f));
 fs.cpSync('images', 'dist/images', { recursive: true });
-fs.cpSync('admin', 'dist/admin', { recursive: true });
 console.log('build complete');

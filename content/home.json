@@ -1,0 +1,29 @@
+{
+  "hero": {
+    "line1": "Quality,",
+    "line2": "from the",
+    "line3": "ground up.",
+    "sub": "Building Newfoundland & Labrador since 1978.",
+    "btn_primary": "Start a conversation",
+    "btn_secondary": "See the work",
+    "titleblock": [
+      {
+        "label": "Established",
+        "value": "1978"
+      },
+      {
+        "label": "Completed",
+        "value": "300+ Projects"
+      },
+      {
+        "label": "Divisions",
+        "value": "Civil \u00b7 Arch. \u00b7 Electrical"
+      },
+      {
+        "label": "Status",
+        "value": "Issued for Construction"
+      }
+    ]
+  },
+  "see_all": "See all projects"
+}

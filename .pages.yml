@@ -3,42 +3,56 @@ media:
   output: /images
 
 content:
-  - name: record
-    label: The Record (archive photos)
+  - name: home
+    label: "Page: Home"
     type: file
-    path: content/record.json
+    path: content/home.json
     fields:
-      - name: items
-        label: Archive entries
+      - name: hero
+        label: Hero
         type: object
-        list: true
         fields:
-          - { name: image, label: Photo, type: image }
-          - { name: year, label: "Year (or era, e.g. 1990s)", type: string }
-          - { name: label, label: "Name & place", type: string }
-          - { name: alt, label: "Image description", type: string, required: false }
+          - { name: line1, label: "Headline line 1", type: string }
+          - { name: line2, label: "Headline line 2 (light)", type: string }
+          - { name: line3, label: "Headline line 3 (blue, bold)", type: string }
+          - { name: sub, label: "Sub tagline", type: string }
+          - { name: btn_primary, label: "Primary button", type: string }
+          - { name: btn_secondary, label: "Secondary button", type: string }
+          - name: titleblock
+            label: Titleblock cells
+            type: object
+            list: true
+            fields:
+              - { name: label, label: Label, type: string }
+              - { name: value, label: Value, type: string }
+      - { name: see_all, label: "See-all-projects button", type: string }
 
-  - name: projects
-    label: Projects
+  - name: wwb
+    label: "Page: What We Build"
     type: file
-    path: content/projects.json
+    path: content/what-we-build.json
     fields:
-      - name: items
-        label: Project entries
+      - { name: heading_line1, label: "Heading line 1", type: string }
+      - { name: heading_line2, label: "Heading line 2", type: string }
+      - { name: lede, label: "Intro paragraph", type: text }
+      - { name: also_note, label: "Also on the record line", type: string }
+      - name: why
+        label: Why Pittmans block
         type: object
-        list: true
         fields:
-          - { name: sheet, label: "Sheet number (e.g. A-04.2)", type: string }
-          - { name: location, label: "Location line", type: string }
-          - { name: title, label: Title, type: string }
-          - { name: body, label: Description, type: text }
-          - { name: tags, label: Tags, type: string, list: true }
-          - { name: image, label: Photo, type: image }
-          - { name: alt, label: "Image description", type: string, required: false }
-          - { name: flagship, label: "Flagship (featured on home page)", type: boolean, default: false }
+          - { name: heading_line1, label: "Heading line 1", type: string }
+          - { name: heading_line2, label: "Heading line 2", type: string }
+          - name: cards
+            label: Cards
+            type: object
+            list: true
+            fields:
+              - { name: num, label: "Number (e.g. 01.)", type: string }
+              - { name: title, label: Title, type: string }
+              - { name: body, label: Body, type: text }
 
   - name: divisions
-    label: Divisions (six cards)
+    label: "Page: What We Build · Divisions (also home cards)"
     type: file
     path: content/divisions.json
     fields:
@@ -60,14 +74,14 @@ content:
           - { name: img_style, label: "Large photo style (advanced, leave alone)", type: string, required: false }
 
   - name: tech
-    label: Technology schedule
+    label: "Page: Technology"
     type: file
     path: content/tech.json
     fields:
       - { name: heading, label: Heading, type: string }
       - { name: lede, label: "Intro paragraph", type: text }
       - name: rows
-        label: Rows
+        label: Schedule rows
         type: object
         list: true
         fields:
@@ -75,70 +89,64 @@ content:
           - { name: name, label: Technology, type: string }
           - { name: desc, label: "What it does for your project", type: text }
 
-  - name: why
-    label: Why Pittmans
+  - name: projpage
+    label: "Page: Projects"
     type: file
-    path: content/why.json
+    path: content/projects-page.json
     fields:
       - { name: heading_line1, label: "Heading line 1", type: string }
       - { name: heading_line2, label: "Heading line 2", type: string }
-      - name: cards
-        label: Cards
+      - { name: lede, label: "Intro paragraph", type: text }
+      - { name: record_title, label: "Record title", type: string }
+      - { name: record_range, label: "Record range", type: string }
+      - { name: record_hint, label: "Record hint", type: string }
+      - { name: record_first_year, label: "Record first card year", type: string }
+      - { name: record_first_label, label: "Record first card label", type: string }
+
+  - name: projects
+    label: "Page: Projects · Entries"
+    type: file
+    path: content/projects.json
+    fields:
+      - name: items
+        label: Project entries
         type: object
         list: true
         fields:
-          - { name: num, label: "Number (e.g. 01.)", type: string }
+          - { name: sheet, label: "Sheet number (e.g. A-04.2)", type: string }
+          - { name: location, label: "Location line", type: string }
           - { name: title, label: Title, type: string }
-          - { name: body, label: Body, type: text }
+          - { name: body, label: Description, type: text }
+          - { name: tags, label: Tags, type: string, list: true }
+          - { name: image, label: Photo, type: image }
+          - { name: alt, label: "Image description", type: string, required: false }
+          - { name: flagship, label: "Flagship (featured on home page)", type: boolean, default: false }
 
-  - name: pages
-    label: Headings, hero & footer
+  - name: record
+    label: "Page: Projects · The Record (archive photos)"
     type: file
-    path: content/pages.json
+    path: content/record.json
     fields:
-      - name: hero
-        label: Hero (home page)
+      - name: items
+        label: Archive entries
         type: object
+        list: true
         fields:
-          - { name: line1, label: "Headline line 1", type: string }
-          - { name: line2, label: "Headline line 2 (light)", type: string }
-          - { name: line3, label: "Headline line 3 (blue, bold)", type: string }
-          - { name: sub, label: "Sub tagline", type: string }
-          - { name: btn_primary, label: "Primary button", type: string }
-          - { name: btn_secondary, label: "Secondary button", type: string }
-          - name: titleblock
-            label: Titleblock cells
-            type: object
-            list: true
-            fields:
-              - { name: label, label: Label, type: string }
-              - { name: value, label: Value, type: string }
-      - name: sectors
-        label: What We Build section
-        type: object
-        fields:
-          - { name: heading_line1, label: "Heading line 1", type: string }
-          - { name: heading_line2, label: "Heading line 2", type: string }
-          - { name: lede, label: "Intro paragraph", type: text }
-          - { name: also_note, label: "Also on the record line", type: string }
-      - name: projects_page
-        label: Projects page
-        type: object
-        fields:
-          - { name: heading_line1, label: "Heading line 1", type: string }
-          - { name: heading_line2, label: "Heading line 2", type: string }
-          - { name: lede, label: "Intro paragraph", type: text }
-          - { name: record_title, label: "Record title", type: string }
-          - { name: record_range, label: "Record range", type: string }
-          - { name: record_hint, label: "Record hint", type: string }
-          - { name: record_first_year, label: "Record first card year", type: string }
-          - { name: record_first_label, label: "Record first card label", type: string }
-          - { name: see_all, label: "See-all button", type: string }
-      - name: contact
-        label: Contact heading
-        type: object
-        fields:
-          - { name: heading, label: "Big line", type: string }
+          - { name: image, label: Photo, type: image }
+          - { name: year, label: "Year (or era, e.g. 1990s)", type: string }
+          - { name: label, label: "Name & place", type: string }
+          - { name: alt, label: "Image description", type: string, required: false }
+
+  - name: global
+    label: "Every page: contact & footer"
+    type: file
+    path: content/global.json
+    fields:
+      - { name: contact_heading, label: "Contact big line", type: string }
+      - { name: phone, label: Phone, type: string }
+      - { name: email, label: Email, type: string }
+      - { name: head_office, label: "Head office line", type: string }
+      - { name: operating, label: "Operating line", type: string }
       - name: footer
         label: Footer
         type: object
@@ -146,13 +154,3 @@ content:
           - { name: left, label: Left, type: string }
           - { name: mid, label: Middle, type: string }
           - { name: right, label: Right, type: string }
-
-  - name: settings
-    label: Contact details
-    type: file
-    path: content/settings.json
-    fields:
-      - { name: phone, label: Phone, type: string }
-      - { name: email, label: Email, type: string }
-      - { name: head_office, label: "Head office line", type: string }
-      - { name: operating, label: "Operating line", type: string }
