@@ -2,9 +2,9 @@
   "items": [
     {
       "sheet": "A-04.1",
-      "location": "Cow Head \u00b7 Gros Morne National Park",
+      "location": "Cow Head · Gros Morne National Park",
       "title": "Nurse Myra Bennett Centre for the Performing Arts",
-      "body": "Built from scratch: a 2,000-square-metre, 178-seat multi-functional theatre complex, the permanent home of the Gros Morne Theatre Festival. A landmark performing arts venue delivered in a community of 425, inside a national park, on the west coast of Newfoundland.",
+      "body": "From the ground up: a 2,000-square-metre, 178-seat multi-functional theatre complex, the permanent home of the Gros Morne Theatre Festival. A landmark performing arts venue delivered in a community of 425, inside a national park, on the west coast of Newfoundland.",
       "tags": [
         "ARCHITECTURAL GC",
         "PERFORMING ARTS",
@@ -16,7 +16,7 @@
     },
     {
       "sheet": "A-04.2",
-      "location": "Seven Corners \u00b7 Gros Morne National Park",
+      "location": "Seven Corners · Gros Morne National Park",
       "title": "Seven Corners Lookout",
       "body": "Sculptural timber viewing structures above Bonne Bay: curved custom woodwork with panoramic apertures that frame the landscape itself. Precision carpentry, built to stand in a national park.",
       "tags": [
@@ -44,7 +44,7 @@
     },
     {
       "sheet": "A-04.4",
-      "location": "52.69\u00b0 N \u00b7 Pinsent's Arm, Labrador",
+      "location": "52.69° N · Pinsent's Arm, Labrador",
       "title": "Marine Infrastructure",
       "body": "Wharf construction and coastal structures, from working wharves to armour stone breakwaters, including current works at Pinsent's Arm, Labrador. Certified marine and structural concrete capability, start to finish.",
       "tags": [
@@ -72,7 +72,7 @@
     },
     {
       "sheet": "A-04.6",
-      "location": "53.70\u00b0 N \u00b7 Cartwright Area, Labrador",
+      "location": "53.70° N · Cartwright Area, Labrador",
       "title": "Mining Exploration Support",
       "body": "Remote camp mobilization and sitework for active mineral exploration in coastal Labrador: pad construction, modular camp installation, and access development, executed on compressed timelines with our own fleet, including company float capacity to 75 tonnes.",
       "tags": [
