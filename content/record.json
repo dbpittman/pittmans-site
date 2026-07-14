@@ -4,61 +4,67 @@
       "image": "/images/img-29-dad7bb4dbf.jpg",
       "alt": "Seniors housing row built by Pittmans in 1990, Cartwright, Labrador",
       "year": "1990",
-      "label": "Seniors Housing \u00b7 Cartwright"
+      "label": "Seniors Housing · Cartwright"
     },
     {
       "image": "/images/img-27-5d98b516a8.jpg",
       "alt": "Mona's Place, a Behlen frameless steel building in Lodge Bay, Labrador",
       "year": "2002",
-      "label": "Mona's Place \u00b7 Lodge Bay"
+      "label": "Mona's Place · Lodge Bay"
     },
     {
       "image": "/images/img-30-8cf4a9f36f.jpg",
       "alt": "Burgeo Academy school built by Pittmans in 2003, Burgeo, Newfoundland",
       "year": "2003",
-      "label": "Burgeo Academy \u00b7 Burgeo"
+      "label": "Burgeo Academy · Burgeo"
     },
     {
       "image": "/images/img-31-969817a6e8.jpg",
       "alt": "Harbour development with wharf and fishing vessel built by Pittmans in 2004, St. Paul's, Newfoundland",
       "year": "2004",
-      "label": "Harbour Development \u00b7 St. Paul's"
+      "label": "Harbour Development · St. Paul's"
     },
     {
       "image": "/images/img-28-ff527951fe.jpg",
       "alt": "CFLCO wash bay under construction, Churchill Falls, Labrador, 2004",
       "year": "2004",
-      "label": "CFLCO Wash Bay \u00b7 Churchill Falls"
+      "label": "CFLCO Wash Bay · Churchill Falls"
     },
     {
       "image": "/images/img-32-e4c3972627.jpg",
       "alt": "Torrent River Salmon Interpretation Centre built by Pittmans in 2005, Hawke's Bay, Newfoundland",
       "year": "2005",
-      "label": "Salmon Interpretation Centre \u00b7 Hawke's Bay"
+      "label": "Salmon Interpretation Centre · Hawke's Bay"
     },
     {
       "image": "/images/img-34-ca62c30965.jpg",
       "alt": "Steel truss tailrace access built by Pittmans for NL Hydro in 2013, Grand Falls, Newfoundland",
       "year": "2013",
-      "label": "NL Hydro Tailrace Access \u00b7 Grand Falls"
+      "label": "NL Hydro Tailrace Access · Grand Falls"
     },
     {
       "image": "/images/img-33-a652abf143.jpg",
       "alt": "Complete Care Pharmasave built by Pittmans in 2016, Rocky Harbour, Newfoundland",
       "year": "2016",
-      "label": "Complete Care Pharmasave \u00b7 Rocky Harbour"
+      "label": "Complete Care Pharmasave · Rocky Harbour"
     },
     {
       "image": "/images/img-23-fd579852b0.jpg",
       "alt": "School built by Pittmans, photographed today",
       "year": "Built to last",
-      "label": "School \u00b7 Newfoundland"
+      "label": "School · Newfoundland"
+    },
+    {
+      "image": "/images/img-35-88158da44a.jpg",
+      "alt": "Rock crushing for DND granulars contract by Pittmans in 2020, Cartwright, Labrador",
+      "year": "2020",
+      "label": "DND Granulars · Cartwright"
     },
     {
       "image": "/images/img-24-93c48c20ae.jpg",
       "alt": "Nurse Myra Bennett Centre",
       "year": "2021",
-      "label": "Nurse Myra Bennett Centre \u00b7 Cow Head"
+      "label": "Nurse Myra Bennett Centre · Cow Head"
     },
     {
       "image": "/images/img-25-066c80e3b2.jpg",
@@ -70,7 +76,7 @@
       "image": "/images/img-26-b54d60bcf6.jpg",
       "alt": "Exploration camp in Labrador",
       "year": "2026",
-      "label": "Exploration Camp \u00b7 Labrador"
+      "label": "Exploration Camp · Labrador"
     }
   ]
 }
