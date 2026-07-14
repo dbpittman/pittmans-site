@@ -1,0 +1,88 @@
+{
+  "items": [
+    {
+      "sheet": "A-04.1",
+      "location": "Cow Head \u00b7 Gros Morne National Park",
+      "title": "Nurse Myra Bennett Centre for the Performing Arts",
+      "body": "Built from scratch: a 2,000-square-metre, 178-seat multi-functional theatre complex, the permanent home of the Gros Morne Theatre Festival. A landmark performing arts venue delivered in a community of 425, inside a national park, on the west coast of Newfoundland.",
+      "tags": [
+        "ARCHITECTURAL GC",
+        "PERFORMING ARTS",
+        "GROS MORNE"
+      ],
+      "image": "images/img-10-ad274973e0.jpg",
+      "alt": "Nurse Myra Bennett Centre for the Performing Arts, built by Pittmans",
+      "flagship": true
+    },
+    {
+      "sheet": "A-04.2",
+      "location": "Seven Corners \u00b7 Gros Morne National Park",
+      "title": "Seven Corners Lookout",
+      "body": "Sculptural timber viewing structures above Bonne Bay: curved custom woodwork with panoramic apertures that frame the landscape itself. Precision carpentry, built to stand in a national park.",
+      "tags": [
+        "ARCHITECTURAL",
+        "PARKS & PUBLIC",
+        "GROS MORNE"
+      ],
+      "image": "images/img-18-bdcac80dee.jpg",
+      "alt": "Bonne Bay framed through the timber viewing aperture at Seven Corners, built by Pittmans",
+      "flagship": false
+    },
+    {
+      "sheet": "A-04.3",
+      "location": "Across Newfoundland & Labrador",
+      "title": "Schools, Arenas & Public Buildings",
+      "body": "Schools built new from the ground up. Arenas and recreation facilities across the province. Public and institutional buildings that communities use every day, delivered as general contractor with civil and electrical self-performed.",
+      "tags": [
+        "EDUCATION",
+        "RECREATION",
+        "INSTITUTIONAL"
+      ],
+      "image": "images/img-19-007c9b9bd3.jpg",
+      "alt": "School built new by Pittmans, full building elevation",
+      "flagship": false
+    },
+    {
+      "sheet": "A-04.4",
+      "location": "52.69\u00b0 N \u00b7 Pinsent's Arm, Labrador",
+      "title": "Marine Infrastructure",
+      "body": "Wharf construction and coastal structures, from working wharves to armour stone breakwaters, including current works at Pinsent's Arm, Labrador. Certified marine and structural concrete capability, start to finish.",
+      "tags": [
+        "MARINE WORKS",
+        "STRUCTURAL CONCRETE",
+        "COASTAL LABRADOR"
+      ],
+      "image": "images/img-20-8001a87fb6.jpg",
+      "alt": "Pittmans long reach excavator on coastal marine works at sunset",
+      "flagship": false
+    },
+    {
+      "sheet": "A-04.5",
+      "location": "Municipalities Across the Province",
+      "title": "Municipal Infrastructure",
+      "body": "Water, sewer, storm, and road infrastructure for towns across Newfoundland and Labrador. Underground services installed to GPS grade control and verified against the survey record.",
+      "tags": [
+        "WATER & SEWER",
+        "ROADS",
+        "UNDERGROUND SERVICES"
+      ],
+      "image": "images/img-21-5ccd98b173.jpg",
+      "alt": "Pittmans crew installing underground municipal services with GPS-equipped excavator",
+      "flagship": false
+    },
+    {
+      "sheet": "A-04.6",
+      "location": "53.70\u00b0 N \u00b7 Cartwright Area, Labrador",
+      "title": "Mining Exploration Support",
+      "body": "Remote camp mobilization and sitework for active mineral exploration in coastal Labrador: pad construction, modular camp installation, and access development, executed on compressed timelines with our own fleet, including company float capacity to 75 tonnes.",
+      "tags": [
+        "REMOTE LOGISTICS",
+        "CAMP INSTALL",
+        "MINING SUPPORT"
+      ],
+      "image": "images/img-22-07dc5588cf.jpg",
+      "alt": "Exploration camp and crushed rock pad built by Pittmans in coastal Labrador",
+      "flagship": false
+    }
+  ]
+}

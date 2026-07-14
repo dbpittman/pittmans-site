@@ -1,0 +1,61 @@
+backend:
+  name: github
+  repo: dbpittman/pittmans-site
+  branch: main
+  base_url: https://api.netlify.com
+
+media_folder: "images/uploads"
+public_folder: "images/uploads"
+
+site_url: https://pittmans.ca
+
+collections:
+  - name: "record"
+    label: "The Record (archive photos)"
+    files:
+      - name: "record"
+        label: "Archive entries"
+        file: "content/record.json"
+        fields:
+          - label: "Entries"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.year}} — {{fields.label}}"
+            fields:
+              - { label: "Photo", name: "image", widget: "image" }
+              - { label: "Year (or era, e.g. 1990s)", name: "year", widget: "string" }
+              - { label: "Name & place", name: "label", widget: "string" }
+              - { label: "Image description (accessibility)", name: "alt", widget: "string", required: false }
+
+  - name: "projects"
+    label: "Projects"
+    files:
+      - name: "projects"
+        label: "Project entries"
+        file: "content/projects.json"
+        fields:
+          - label: "Projects"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.sheet}} — {{fields.title}}"
+            fields:
+              - { label: "Sheet number (e.g. A-04.2)", name: "sheet", widget: "string" }
+              - { label: "Location line", name: "location", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "body", widget: "text" }
+              - { label: "Tags", name: "tags", widget: "list", field: { label: "Tag", name: "tag", widget: "string" } }
+              - { label: "Photo", name: "image", widget: "image" }
+              - { label: "Image description", name: "alt", widget: "string", required: false }
+              - { label: "Flagship (featured on home page)", name: "flagship", widget: "boolean", default: false }
+
+  - name: "settings"
+    label: "Contact details"
+    files:
+      - name: "settings"
+        label: "Contact & company details"
+        file: "content/settings.json"
+        fields:
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Head office line", name: "head_office", widget: "string" }
+          - { label: "Operating line", name: "operating", widget: "string" }
