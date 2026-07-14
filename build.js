@@ -85,8 +85,6 @@ const tokens = {
   '{{REC_TITLE}}': esc(pages.projects_page.record_title),
   '{{REC_RANGE}}': esc(pages.projects_page.record_range),
   '{{REC_HINT}}': esc(pages.projects_page.record_hint),
-  '{{REC_FIRST_YEAR}}': esc(pages.projects_page.record_first_year),
-  '{{REC_FIRST_LABEL}}': esc(pages.projects_page.record_first_label),
   '{{SEE_ALL}}': esc(pages.projects_page.see_all),
   '{{CONTACT_HEADING}}': esc(pages.contact.heading),
   '{{FOOT_L}}': esc(pages.footer.left),

@@ -425,15 +425,6 @@ footer::before{content:"";display:block;border-top:1px solid rgba(238,240,242,.2
 }
 .rec .ry{font-size:13px;letter-spacing:.16em;color:var(--red)}
 .rec .rn{font-size:12px;letter-spacing:.1em;color:var(--fog-dim);margin-top:3px;line-height:1.5}
-.rec.first{
-  display:flex;flex-direction:column;justify-content:center;padding:20px 22px;
-  background:
-    repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 24px),
-    repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 24px),
-    linear-gradient(160deg,#14386b,#0e2a52);
-}
-.rec.first .ry{font-size:30px}
-.rec.first .rn{color:rgba(255,255,255,.8)}
 @media(max-width:600px){.rec{flex-basis:240px}.rec img{height:160px}}
 /* technology schedule */
 #tech{border-top:1px solid var(--hair)}
@@ -536,7 +527,6 @@ main > section:first-child{padding-top:88px}
         <div class="rh">{{REC_HINT}}</div>
       </div>
       <div class="record-strip">
-        <div class="rec first"><div class="ry">{{REC_FIRST_YEAR}}</div><div class="rn">{{REC_FIRST_LABEL}}</div></div>
 {{RECORD}}
       </div>
     </div>

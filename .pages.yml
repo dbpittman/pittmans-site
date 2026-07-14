@@ -100,8 +100,6 @@ content:
       - { name: record_title, label: "Record title", type: string }
       - { name: record_range, label: "Record range", type: string }
       - { name: record_hint, label: "Record hint", type: string }
-      - { name: record_first_year, label: "Record first card year", type: string }
-      - { name: record_first_label, label: "Record first card label", type: string }
 
   - name: projects
     label: "Projects · Entries (flagship shows on Home)"
