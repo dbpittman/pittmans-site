@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#16191d">
+<meta name="description" content="Pittmans' construction technology: GPS machine control, robotic total station, autonomous marine survey vessel, underwater ROV, drone photogrammetry, and 3D dynamic structural modelling.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pittman's Enterprises Limited: Building Newfoundland & Labrador since 1978">
+<meta property="og:description" content="Second-generation architectural, heavy civil, marine, and electrical contractors. 300+ projects. Turnkey, foundation to finish.">
+<!-- og:image: add absolute URL to a site photo once hosted, e.g. https://pittmans.ca/og.jpg -->
+
+<title>Survey &amp; Technology | Pittman's Enterprises Limited</title>
+<link rel="icon" href="images/img-01-d2ae91cc91.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Didact+Gothic&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --granite:#16191d;
+  --granite-2:#20252b;
+  --fog:#eef0f2;
+  --fog-dim:#b8bec6;
+  --steel:#2E75B6;
+  --steel-bright:#4a94d6;
+  --amber:#f2a01f;
+  --red:#e05a5f;
+  --hair:rgba(238,240,242,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;background:#16191d;overscroll-behavior-y:none;height:100%}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{
+  background:var(--granite);min-height:100%;
+  color:var(--fog);
+  font-family:'Barlow',sans-serif;
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--steel);color:#fff}
+a:focus-visible,button:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+
+.contours{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.35}
+@media(max-width:900px){.contours{display:none}}
+.contours svg{width:100%;height:100%}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+.eyebrow{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12px;letter-spacing:.14em;
+  color:var(--steel-bright);
+  text-transform:uppercase;
+  display:flex;align-items:center;gap:14px;
+}
+.eyebrow::after{content:"";height:1px;flex:0 0 48px;background:var(--steel)}
+section{padding:110px 0;position:relative;z-index:1;background:var(--granite)}
+h2,main h1{
+  font-family:'Jost',sans-serif;
+  font-weight:600;font-size:clamp(32px,4.4vw,50px);
+  line-height:1.1;text-transform:uppercase;letter-spacing:.04em;
+  margin:18px 0 10px;
+}
+.lede{max-width:660px;color:var(--fog-dim);font-size:18px}
+
+
+
+/* ---------- sheet index nav ---------- */
+.sheet-index{
+  background:var(--granite-2);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);
+}
+.si-in{
+  max-width:1180px;margin:0 auto;padding:0 22px;
+  display:flex;align-items:stretch;overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+}
+.si-in a{
+  display:flex;align-items:center;gap:8px;
+  padding:16px 22px;text-decoration:none;white-space:nowrap;
+  font-family:'Didact Gothic',sans-serif;font-size:13px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--fog-dim);
+  border-left:1px solid var(--hair);
+  transition:background .2s,color .2s;
+}
+.si-in a:last-child{border-right:1px solid var(--hair)}
+.si-in a .no{color:var(--red);font-size:11px;letter-spacing:.12em}
+.si-in a:hover{background:var(--steel);color:#fff}
+.si-in a:hover .no{color:#fff}
+.si-in a.active{background:rgba(46,117,182,.18);color:var(--fog);box-shadow:inset 0 -2px 0 var(--steel-bright)}
+@media(max-width:760px){
+  .si-in{display:block;padding:0;overflow:visible}
+    .si-in a{
+    border-left:none;border-top:1px solid var(--hair);
+    padding:15px 22px;font-size:14px;
+  }
+  .si-in a:last-child{border-right:none;border-bottom:none}
+  .si-in a.active{box-shadow:inset 3px 0 0 var(--steel-bright)}
+}
+/* ---------- hero: cyanotype blueprint ---------- */
+header.hero{
+  position:relative;z-index:1;overflow:hidden;
+  background:
+    radial-gradient(120% 90% at 30% 20%, rgba(255,255,255,.06), transparent 60%),
+    radial-gradient(100% 80% at 80% 90%, rgba(0,0,0,.25), transparent 55%),
+    linear-gradient(160deg,#14386b 0%,#0e2a52 55%,#0b2344 100%);
+  color:#fff;
+  padding:20px 0 0;
+}
+.plan-bg{
+  position:absolute;top:0;bottom:0;right:0;left:38%;z-index:0;pointer-events:none;
+}
+@media(max-width:760px){
+  .plan-bg{left:0;opacity:.16;-webkit-mask-image:none;mask-image:none}
+}
+.plan-bg{
+  background-image:var(--plan);
+  background-size:cover;background-position:center 26%;
+  opacity:.26;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22%);
+  mask-image:linear-gradient(90deg,transparent 0,#000 22%);
+}
+.sheet-main,.titleblock{position:relative;z-index:1}
+.crease-v,.crease-h{position:absolute;pointer-events:none;z-index:0}
+.crease-v{left:50%;top:0;bottom:0;width:3px;background:linear-gradient(90deg,rgba(0,0,0,.16),rgba(255,255,255,.13),rgba(0,0,0,.12))}
+.crease-h{top:58%;left:0;right:0;height:3px;background:linear-gradient(180deg,rgba(0,0,0,.16),rgba(255,255,255,.12),rgba(0,0,0,.1))}
+.draft{font-family:'Didact Gothic',sans-serif;text-transform:uppercase}
+.sheet{max-width:1180px;margin:0 auto;padding:0 22px 28px;position:relative;z-index:1}
+.sheet-frame{
+  position:relative;overflow:hidden;
+  border:none;
+  padding:44px 40px 0;
+  background:
+    repeating-linear-gradient(0deg, rgba(255,255,255,.085) 0 1px, transparent 1px 120px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.085) 0 1px, transparent 1px 120px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,.04) 0 1px, transparent 1px 24px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.04) 0 1px, transparent 1px 24px);
+}
+.sheet-frame::before{content:"";position:absolute;inset:8px;border:1px solid rgba(255,255,255,.45);pointer-events:none}
+.frame-draw{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.frame-draw rect{
+  fill:none;stroke:rgba(255,255,255,.9);stroke-width:2.5;
+}
+/* border grid references */
+.grid-refs-top{
+  position:absolute;top:-1px;left:8px;right:8px;height:30px;
+  display:flex;pointer-events:none;
+}
+.grid-refs-top span{
+  flex:1;display:flex;align-items:center;justify-content:center;
+  font-family:'Didact Gothic',sans-serif;font-size:12px;letter-spacing:.1em;
+  color:rgba(255,255,255,.6);
+  border-right:1px solid rgba(255,255,255,.3);height:22px;margin-top:0;
+}
+.grid-refs-top span:last-child{border-right:none}
+.grid-refs-left{
+  position:absolute;top:8px;bottom:8px;left:-1px;width:26px;
+  display:flex;flex-direction:column;pointer-events:none;
+}
+.grid-refs-left span{
+  flex:1;display:flex;align-items:center;justify-content:center;
+  font-family:'Didact Gothic',sans-serif;font-size:12px;
+  color:rgba(255,255,255,.6);
+  border-bottom:1px solid rgba(255,255,255,.3);width:20px;
+}
+.grid-refs-left span:last-child{border-bottom:none}
+@media(max-width:760px){.grid-refs-top,.grid-refs-left{display:none}}
+.sheet-main{padding:8px 0 40px;position:relative}
+.sheet-main h1{
+  font-family:'Jost',sans-serif;font-weight:600;
+  font-size:clamp(44px,7vw,96px);line-height:1.06;
+  text-transform:uppercase;letter-spacing:.04em;color:#fff;margin:0 0 14px;
+}
+.sheet-main h1 em{font-style:normal;color:#9cc4ee;font-weight:700}
+.sheet-main h1 .lt{font-weight:300}
+.sheet-main .lede{
+  font-family:'Didact Gothic',sans-serif;text-transform:uppercase;
+  color:rgba(255,255,255,.78);max-width:640px;font-size:14px;
+  letter-spacing:.12em;line-height:1.9;
+}
+.sheet-cta{margin-top:34px;display:flex;gap:16px;flex-wrap:wrap}
+@media(max-width:600px){
+  .sheet-cta{gap:10px}
+  .sheet-cta .btn{padding:10px 18px;font-size:13px;letter-spacing:.12em}
+}
+.sheet-cta .btn{color:#fff;border-color:rgba(255,255,255,.7);font-family:'Didact Gothic',sans-serif;letter-spacing:.18em;font-size:15px}
+.sheet-cta .btn:hover{border-color:#fff}
+.sheet-cta .btn.solid{background:rgba(255,255,255,.92);border-color:rgba(255,255,255,.92);color:#0e2a52}
+.sheet-cta .btn.solid:hover{background:#fff;border-color:#fff}
+@media(max-width:1000px){}
+.north{position:absolute;right:6px;top:-4px;width:54px;height:70px;pointer-events:none;opacity:.8}
+@media(max-width:1000px){.north{display:none}}
+@media(max-width:1000px){}
+/* titleblock */
+.titleblock{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border-top:2.5px solid rgba(255,255,255,.9);
+  margin:0 -40px;
+}
+.tb{padding:13px 22px 16px;border-right:1px solid rgba(255,255,255,.55)}
+.tb:last-child{border-right:none}
+.tb .l{font-family:'Didact Gothic',sans-serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.tb .v{font-family:'Didact Gothic',sans-serif;font-size:18px;letter-spacing:.1em;text-transform:uppercase;color:#fff;line-height:1.15;margin-top:4px}
+@media(max-width:900px){
+  .titleblock{grid-template-columns:1fr 1fr;margin:0 -18px}
+  .tb{border-bottom:none}
+  .tb:nth-child(n+3){display:none}
+  .tb:nth-child(2){border-right:none}
+}
+@media(max-width:760px){
+  .sheet{padding:0 10px 36px}
+  .sheet-frame{padding:20px 18px 0;border-width:2px}
+  .sheet-frame::before{inset:5px}
+  .titleblock{margin:0 -18px}
+}
+
+.photo-strip{
+  margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+  background:var(--hair);border:1px solid var(--hair);
+}
+@media(max-width:960px){.photo-strip{grid-template-columns:1fr 1fr}}
+.photo-strip figure{background:var(--granite);margin:0}
+.photo-strip img{width:100%;height:260px;object-fit:cover;display:block;filter:saturate(.95)}
+.photo-strip figcaption{
+  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;
+  color:var(--fog-dim);text-transform:uppercase;padding:14px 16px;
+}
+@media(max-width:760px){.photo-strip{grid-template-columns:1fr}}
+@media(max-width:760px){
+  section{padding:64px 0}
+  #sectors{padding-top:56px}
+  .projects{gap:32px}
+  .p-img{min-height:260px}
+}
+.hero h1{
+  font-family:'Barlow Condensed',sans-serif;font-weight:700;
+  font-size:clamp(52px,8.5vw,122px);
+  line-height:.96;text-transform:uppercase;letter-spacing:.005em;
+  margin:22px 0 26px;
+}
+.hero h1 em{font-style:normal;color:var(--steel-bright)}
+.hero .lede{font-size:20px;max-width:600px}
+.hero-meta{
+  margin-top:44px;display:flex;flex-wrap:wrap;gap:14px 40px;
+  font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--fog-dim);
+}
+.hero-meta b{color:var(--amber);font-weight:500}
+.hero-cta{margin-top:40px;display:flex;gap:16px;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:15px 30px;text-decoration:none;
+  font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:18px;
+  text-transform:uppercase;letter-spacing:.06em;
+  border:1px solid var(--steel);color:var(--fog);
+  transition:background .2s,border-color .2s;
+}
+.btn.solid{background:var(--steel);border-color:var(--steel)}
+.btn.solid:hover{background:var(--steel-bright);border-color:var(--steel-bright)}
+.btn:hover{border-color:var(--steel-bright)}
+
+/* ---------- record strip ---------- */
+.record{
+  margin-top:70px;display:grid;grid-template-columns:repeat(4,1fr);
+  border:1px solid var(--hair);
+}
+.record div{padding:26px 24px;border-right:1px solid var(--hair)}
+.record div:last-child{border-right:none}
+.record .n{
+  font-family:'Didact Gothic',sans-serif;font-weight:400;font-size:40px;
+  color:var(--fog);line-height:1;
+}
+.record .l{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:var(--fog-dim);text-transform:uppercase;margin-top:8px}
+@media(max-width:860px){.record{grid-template-columns:1fr 1fr}.record div{border-bottom:1px solid var(--hair)}}
+
+/* ---------- sectors ---------- */
+#sectors{border-top:1px solid var(--hair);padding-top:76px}
+.sectors{
+  margin-top:60px;display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;background:var(--hair);border:1px solid var(--hair);
+}
+.sector{background:var(--granite);padding:36px 30px 42px;transition:background .25s}
+.sector:hover{background:var(--granite-2)}
+.sector .k{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--red);letter-spacing:.2em;text-transform:uppercase}
+.sector h3{
+  font-family:'Didact Gothic',sans-serif;font-weight:400;font-size:23px;letter-spacing:.08em;
+  text-transform:uppercase;margin:12px 0 10px;line-height:1.15;
+}
+.sector p{font-size:15px;color:var(--fog-dim);line-height:1.55}
+@media(max-width:960px){.sectors{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.sectors{grid-template-columns:1fr}}
+
+/* ---------- flagship + projects ---------- */
+.projects{margin-top:64px;display:grid;gap:56px}
+.project{display:grid;grid-template-columns:1.15fr 1fr;border:1px solid var(--hair)}
+.project.flag{border-color:rgba(46,117,182,.55)}
+.project:nth-child(even){grid-template-columns:1fr 1.15fr}
+.project:nth-child(even) .p-img{
+  min-height:360px;position:relative;overflow:hidden;
+  background:
+    repeating-linear-gradient(0deg,rgba(255,255,255,.045) 0 1px,transparent 1px 26px),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.045) 0 1px,transparent 1px 26px),
+    linear-gradient(160deg,#123258 0%,#0d2645 100%);
+  display:flex;align-items:flex-end;
+}
+.p-img{
+  min-height:360px;position:relative;overflow:hidden;
+  background:
+    linear-gradient(160deg,rgba(46,117,182,.28),rgba(22,25,29,.9) 65%),
+    var(--granite-2);
+  display:flex;align-items:flex-end;
+}
+.p-img svg{position:absolute;inset:0;width:100%;height:100%;opacity:.5}
+.p-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.95)}
+.p-img .ph{
+  position:relative;padding:18px 22px;
+  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;
+  color:var(--fog-dim);text-transform:uppercase;
+}
+.p-body{padding:44px 42px}
+.p-body .eyebrow{color:var(--red)}
+.p-body .eyebrow::after{background:var(--red)}
+.p-body h3{
+  font-family:'Didact Gothic',sans-serif;font-weight:400;font-size:27px;letter-spacing:.07em;
+  text-transform:uppercase;line-height:1.2;margin:16px 0 14px;
+}
+.p-body p{color:var(--fog-dim);font-size:16px}
+.p-tags{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px}
+.tag{
+  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.06em;
+  border:1px solid var(--hair);padding:6px 12px;color:var(--fog-dim);
+}
+@media(max-width:860px){
+  .project,.project:nth-child(even){grid-template-columns:1fr}
+  .project:nth-child(even) .p-img{order:0}
+  .p-body{padding:34px 26px}
+}
+
+/* ---------- why ---------- */
+#why{border-top:1px solid var(--hair)}
+.why-grid{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--hair);border:1px solid var(--hair)}
+.why-card{background:var(--granite);padding:40px 36px}
+.why-card h3{
+  font-family:'Didact Gothic',sans-serif;font-weight:400;font-size:21px;letter-spacing:.08em;
+  text-transform:uppercase;margin-bottom:12px;
+}
+.why-card h3 span{color:var(--steel-bright)}
+.why-card p{color:var(--fog-dim);font-size:16px}
+@media(max-width:760px){.why-grid{grid-template-columns:1fr}}
+
+/* ---------- contact ---------- */
+#contact{
+  border-top:1px solid var(--hair);padding-bottom:70px;
+  background:
+    linear-gradient(180deg,rgba(22,25,29,.92) 0%,rgba(22,25,29,.78) 50%,rgba(22,25,29,.94) 100%),
+    var(--contact-bg) center 40%/cover no-repeat,
+    var(--granite);
+}
+.contact-in{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;margin-top:50px}
+.contact-in .big{
+  font-family:'Didact Gothic',sans-serif;font-weight:400;
+  font-size:clamp(26px,3.6vw,40px);line-height:1.25;text-transform:uppercase;letter-spacing:.05em;
+}
+.contact-list{font-family:'IBM Plex Mono',monospace;font-size:15px;line-height:2.2;color:var(--fog-dim)}
+.contact-list a{color:var(--fog);text-decoration:none;border-bottom:1px solid var(--steel)}
+.contact-list a:hover{color:var(--steel-bright)}
+@media(max-width:760px){.contact-in{grid-template-columns:1fr;gap:30px}}
+
+footer{
+  background:var(--granite);
+  border-top:2px solid rgba(238,240,242,.5);position:relative;z-index:1;
+  font-family:'Didact Gothic',sans-serif;font-size:12px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--fog-dim);padding:0;
+}
+footer::before{content:"";display:block;border-top:1px solid rgba(238,240,242,.25);margin-top:4px}
+.foot-in{padding-top:22px;padding-bottom:26px}
+.foot-in{max-width:1180px;margin:0 auto;padding:0 28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+.shno{color:var(--red);letter-spacing:.14em;margin-right:6px;white-space:nowrap}
+@media(max-width:640px){.eyebrow::after{display:none}}
+.project{position:relative;border:1px solid rgba(74,148,214,.4)}
+.project.flag{grid-template-columns:1fr}
+.project.flag .p-img{min-height:500px}
+.project.flag .p-body h3{font-size:34px}
+@media(max-width:860px){.project.flag .p-img{min-height:300px}}
+.project::before{content:"";position:absolute;inset:6px;border:1px solid rgba(74,148,214,.18);pointer-events:none;z-index:1}
+.p-tags{border-top:1px solid rgba(238,240,242,.35);margin-top:26px;gap:0}
+.p-tags .tag{
+  font-family:'Didact Gothic',sans-serif;font-size:11px;letter-spacing:.18em;
+  border:none;border-right:1px solid rgba(238,240,242,.3);
+  padding:12px 16px 2px 0;margin-right:16px;color:rgba(238,240,242,.6);
+}
+.p-tags .tag:last-child{border-right:none}
+.also-note{
+  margin-top:34px;font-family:'Didact Gothic',sans-serif;font-size:13px;
+  letter-spacing:.18em;text-transform:uppercase;color:rgba(238,240,242,.6);
+}
+.also-note b{color:var(--fog);font-weight:400}
+/* the record: horizontal archive strip */
+.record-band{margin-top:72px}
+.record-head{
+  display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;
+  font-family:'Didact Gothic',sans-serif;text-transform:uppercase;
+}
+.record-head .rt{font-size:14px;letter-spacing:.22em;color:var(--fog)}
+.record-head .rt span{color:var(--red)}
+.record-head .rh{font-size:11px;letter-spacing:.18em;color:rgba(238,240,242,.45)}
+.record-strip{
+  margin-top:18px;display:flex;gap:1px;overflow-x:auto;
+  scroll-snap-type:x mandatory;background:var(--hair);
+  border:1px solid var(--hair);
+  -webkit-overflow-scrolling:touch;
+}
+.record-strip::-webkit-scrollbar{height:6px}
+.record-strip::-webkit-scrollbar-thumb{background:rgba(238,240,242,.25)}
+.rec{
+  flex:0 0 300px;scroll-snap-align:start;background:var(--granite);
+}
+.rec img{width:100%;height:190px;object-fit:cover;display:block;filter:contrast(1.08)}
+.rec .rc{
+  padding:12px 14px 14px;
+  font-family:'Didact Gothic',sans-serif;text-transform:uppercase;
+}
+.rec .ry{font-size:13px;letter-spacing:.16em;color:var(--red)}
+.rec .rn{font-size:12px;letter-spacing:.1em;color:var(--fog-dim);margin-top:3px;line-height:1.5}
+.rec.first{
+  display:flex;flex-direction:column;justify-content:center;padding:20px 22px;
+  background:
+    repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 24px),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 24px),
+    linear-gradient(160deg,#14386b,#0e2a52);
+}
+.rec.first .ry{font-size:30px}
+.rec.first .rn{color:rgba(255,255,255,.8)}
+@media(max-width:600px){.rec{flex-basis:240px}.rec img{height:160px}}
+/* technology schedule */
+#tech{border-top:1px solid var(--hair)}
+.sched{margin-top:56px;border:1px solid rgba(238,240,242,.4)}
+.sched-row{
+  display:grid;grid-template-columns:96px 300px 1fr;
+  border-bottom:1px solid rgba(238,240,242,.25);
+}
+.sched-row:last-child{border-bottom:none}
+.sched-row:not(.head){transition:background .2s}
+.sched-row:not(.head):hover{background:rgba(46,117,182,.12)}
+.sched-row.head{border-bottom:2px solid rgba(238,240,242,.55)}
+.sched-row > div{padding:18px 22px;border-right:1px solid rgba(238,240,242,.25)}
+.sched-row > div:last-child{border-right:none}
+.sc-no{font-family:'Didact Gothic',sans-serif;font-size:13px;letter-spacing:.16em;color:var(--red);white-space:nowrap}
+.sc-name{font-family:'Didact Gothic',sans-serif;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--fog)}
+.sc-desc{font-size:15px;color:var(--fog-dim);line-height:1.6}
+.sched-row.head > div{
+  font-family:'Didact Gothic',sans-serif;font-size:10px;letter-spacing:.24em;
+  text-transform:uppercase;color:rgba(238,240,242,.5);padding:12px 22px;
+}
+@media(max-width:860px){
+  .sched-row{grid-template-columns:70px 1fr}
+  .sched-row > div:nth-child(3){grid-column:1 / 3;border-top:1px solid rgba(238,240,242,.15);border-right:none}
+  .sched-row.head > div:nth-child(3){display:none}
+}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media print{
+  .contours,.frame-draw,.sheet-cta,.crease-v,.crease-h{display:none!important}
+  html,body,section,footer,header.hero{background:#fff!important;color:#111!important}
+  .sheet-frame{border:2px solid #111!important}
+  .sheet-frame::before{border-color:#555!important}
+  .plan-bg{opacity:.12;filter:invert(1)}
+  h1,h2,h3,.tb .v,.sc-name,.big{color:#111!important}
+  .lede,.sc-desc,p,.tb .l,.sched-row.head > div{color:#333!important}
+  .shno,.sc-no{color:#a3252b!important}
+  .eyebrow{color:#1F3864!important}
+  .sector,.project,.why-card,.sched,.sched-row,.tb,.titleblock,.p-tags,.tag{border-color:#999!important;background:#fff!important}
+  .photo-strip img,.p-img img{filter:none!important}
+  .contact-list,.contact-list a,footer,.foot-in div{color:#111!important}
+  section{padding:40px 0!important}
+  a{text-decoration:none;color:#111}
+  .sheet-main > img{filter:invert(1) hue-rotate(180deg)}
+}
+
+/* nav logo cell + see-all */
+.si-logo{display:flex;align-items:center;padding:10px 24px 10px 0}
+.si-logo img{height:38px;width:auto;display:block}
+@media(max-width:760px){.si-logo{padding:14px 22px 4px}}
+.see-all{margin-top:34px}
+.see-all .btn{color:var(--fog);border-color:var(--steel)}
+.see-all .btn:hover{border-color:var(--steel-bright)}
+/* interior pages: give first section room at top */
+main > section:first-child{padding-top:88px}
+</style>
+<link rel="canonical" href="https://pittmans.ca/technology.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"Pittman's Enterprises Limited","alternateName":"Pittmans","url":"https://pittmans.ca/","telephone":"+1-709-243-2666","email":"info@pittmans.ca","foundingDate":"1978","address":{"@type":"PostalAddress","addressLocality":"St. Paul's","addressRegion":"NL","addressCountry":"CA"},"areaServed":{"@type":"State","name":"Newfoundland and Labrador"},"knowsAbout":["architectural general contracting","heavy civil construction","marine infrastructure","wharf construction","dredging","breakwaters","commercial and industrial electrical contracting","drilling and blasting","aggregate crushing","remote site construction","mining exploration support","GPS machine control","drone photogrammetry","hydrographic survey"],"slogan":"Quality, from the ground up."}</script>
+</head>
+<body>
+
+<div class="contours" aria-hidden="true">
+<svg viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice" fill="none" stroke="#2E75B6" stroke-opacity=".22" stroke-width="1">
+<path d="M-50 780 C 200 700, 340 760, 520 690 S 900 640, 1100 690 S 1350 660, 1460 700"/>
+<path d="M-50 720 C 220 640, 360 700, 540 630 S 920 580, 1120 630 S 1360 600, 1460 640"/>
+<path d="M-50 660 C 240 580, 380 640, 560 570 S 940 520, 1140 570 S 1370 540, 1460 580"/>
+<path d="M-50 600 C 260 520, 400 580, 580 510 S 960 460, 1160 510 S 1380 480, 1460 520"/>
+<path d="M-50 540 C 280 460, 420 520, 600 450 S 980 400, 1180 450 S 1390 420, 1460 460"/>
+<path d="M-50 470 C 300 390, 440 450, 620 380 S 1000 330, 1200 380 S 1400 350, 1460 390"/>
+<path d="M-50 400 C 320 320, 460 380, 640 310 S 1020 260, 1220 310 S 1410 280, 1460 320"/>
+<path d="M-50 330 C 340 250, 480 310, 660 240 S 1040 190, 1240 240 S 1420 210, 1460 250"/>
+<path d="M-50 260 C 360 180, 500 240, 680 170 S 1060 120, 1260 170 S 1430 140, 1460 180"/>
+<path d="M-50 190 C 380 110, 520 170, 700 100 S 1080 50, 1280 100 S 1440 70, 1460 110"/>
+</svg>
+</div>
+
+<nav class="sheet-index" aria-label="Site pages">
+  <div class="si-in">
+    <a class="si-logo" href="index.html" aria-label="Home"><img src="images/img-03-fc36aa75c6.png" alt="Pittman's Enterprises Limited"></a>
+    <a href="index.html"><span class="no">A-01</span>Home</a>
+    <a href="what-we-build.html"><span class="no">A-02</span>What We Build</a>
+    <a href="technology.html" class="active"><span class="no">A-03</span>Technology</a>
+    <a href="projects.html"><span class="no">A-04</span>Projects</a>
+  </div>
+</nav>
+
+<main>
+<section id="tech">
+  <div class="wrap">
+    <div class="eyebrow reveal"><span class="shno">A-03</span>Survey &amp; Technology</div>
+    <h1 class="reveal">Measured. Modelled. Built.</h1>
+    <p class="lede reveal">From GPS machine control to underwater ROVs, we run a technology stack few contractors in the country can match. Not for show: it works on every Pittmans site, every day.</p>
+    <div class="sched reveal">
+      <div class="sched-row head"><div>No.</div><div>Technology</div><div>What it does for your project</div></div>
+      <div class="sched-row"><div class="sc-no">T-01</div><div class="sc-name">GPS Machine Control</div><div class="sc-desc">Excavators and dozers cut directly to the 3D design surface. No stakes, no rework, no waiting on grade checks.</div></div>
+      <div class="sched-row"><div class="sc-no">T-02</div><div class="sc-name">Robotic Total Station</div><div class="sc-desc">Millimetre layout and as-built verification on structures, wharves, and steel. Survey-grade control, one operator.</div></div>
+      <div class="sched-row"><div class="sc-no">T-03</div><div class="sc-name">Autonomous Marine Survey Vessel</div><div class="sc-desc">Unmanned hydrographic survey of seabeds, channels, and berths. Dredge volumes and clearances measured, not estimated.</div></div>
+      <div class="sched-row"><div class="sc-no">T-04</div><div class="sc-name">Underwater ROV</div><div class="sc-desc">Subsea inspection of piles, cribwork, and structures without putting divers in the water. Video record before, during, and after.</div></div>
+      <div class="sched-row"><div class="sc-no">T-05</div><div class="sc-name">Drone Photogrammetry</div><div class="sc-desc">Site-wide topography and volumetrics in hours, not weeks. Progress mapped and quantities proven every cycle.</div></div>
+      <div class="sched-row"><div class="sc-no">T-06</div><div class="sc-name">3D &amp; Dynamic Structural Modelling</div><div class="sc-desc">Constructability, clash detection, and load behaviour modelled before mobilization. Problems get solved on screen, not on your schedule.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="--contact-bg:url(images/img-11-238d9e2c43.jpg)">
+  <div class="wrap">
+    <div class="eyebrow reveal"><span class="shno">A-06</span>Contact</div>
+    <div class="contact-in reveal">
+      <div class="big">Building something? Call the contractor that's been doing it since 1978.</div>
+      <div class="contact-list">
+        EMAIL: <a href="mailto:info@pittmans.ca">info@pittmans.ca</a><br>
+        PHONE: <a href="tel:+17092432666">709-243-2666</a><br>
+        HEAD OFFICE: St. Paul's, NL · Gros Morne National Park<br>
+        OPERATING: Anywhere in Newfoundland &amp; Labrador
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="foot-in">
+    <div>© 2026 PITTMAN'S ENTERPRISES LIMITED</div>
+    <div>CIVIL · ARCHITECTURAL · ELECTRICAL</div>
+    <div>SHEET A-01 · END OF DRAWINGS</div>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+(function(){
+  const svg=document.querySelector('.frame-draw'),rect=svg&&svg.querySelector('rect');
+  if(!rect)return;
+  function size(){
+    const f=svg.parentElement.getBoundingClientRect();
+    rect.setAttribute('width',Math.max(0,f.width-2.5));
+    rect.setAttribute('height',Math.max(0,f.height-2.5));
+    return 2*(f.width+f.height);
+  }
+  const P=size();
+  window.addEventListener('resize',size);
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches && rect.animate){
+    rect.style.strokeDasharray=P;
+    rect.animate([{strokeDashoffset:P},{strokeDashoffset:0}],{duration:1600,easing:'ease-out'})
+      .onfinish=()=>{rect.style.strokeDasharray='none'};
+  }
+})();
+</script>
+</body>
+</html>
