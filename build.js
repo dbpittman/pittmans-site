@@ -95,7 +95,6 @@ const tokens = {
   '{{EMAIL}}': esc(settings.email),
   '{{HEAD_OFFICE}}': esc(settings.head_office),
   '{{OPERATING}}': esc(settings.operating),
-  '{{CRED_LINE}}': esc(glob.credentials_line),
 };
 
 fs.rmSync('dist', { recursive: true, force: true });
