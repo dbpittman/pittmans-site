@@ -348,7 +348,6 @@ header.hero{
 }
 .why-card h3 span{color:var(--steel-bright)}
 .why-card p{color:var(--fog-dim);font-size:16px}
-.creds{margin-top:1px;border:1px solid var(--hair);border-top:none;padding:16px 24px;font-family:'Didact Gothic',sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--fog-dim);text-align:center}
 @media(max-width:760px){.why-grid{grid-template-columns:1fr}}
 
 /* ---------- contact ---------- */
@@ -541,7 +540,6 @@ main > section:first-child{padding-top:88px}
     <div class="why-grid reveal">
 {{WHY_CARDS}}
     </div>
-    <div class="creds reveal">{{CREDENTIALS}}</div>
   </div>
 </section>
 
@@ -554,7 +552,8 @@ main > section:first-child{padding-top:88px}
         EMAIL: <a href="mailto:{{EMAIL}}">{{EMAIL}}</a><br>
         PHONE: <a href="tel:+1{{PHONE_DIGITS}}">{{PHONE}}</a><br>
         HEAD OFFICE: {{HEAD_OFFICE}}<br>
-        OPERATING: {{OPERATING}}
+        OPERATING: {{OPERATING}}<br>
+        CREDENTIALS: {{CRED_LINE}}
       </div>
     </div>
   </div>

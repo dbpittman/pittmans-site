@@ -35,7 +35,6 @@ content:
       - { name: heading_line1, label: "Heading line 1", type: string }
       - { name: heading_line2, label: "Heading line 2", type: string }
       - { name: lede, label: "Intro paragraph", type: text }
-      - { name: credentials, label: "Credentials line (What We Build, under Why cards)", type: string }
       - { name: also_note, label: "Also on the record line", type: string }
       - name: why
         label: Why Pittmans block
@@ -146,6 +145,7 @@ content:
       - { name: email, label: Email, type: string }
       - { name: head_office, label: "Head office line", type: string }
       - { name: operating, label: "Operating line", type: string }
+      - { name: credentials_line, label: "Credentials line (contact block, all pages)", type: string }
       - name: footer
         label: Footer
         type: object

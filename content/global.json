@@ -2,11 +2,12 @@
   "contact_heading": "Building something? Call the contractor that's been doing it since 1978.",
   "phone": "709-243-2666",
   "email": "info@pittmans.ca",
-  "head_office": "St. Paul's, NL \u00b7 Gros Morne National Park",
+  "head_office": "St. Paul's, NL · Gros Morne National Park",
   "operating": "Anywhere in Newfoundland & Labrador",
   "footer": {
-    "left": "\u00a9 2026 Pittman's Enterprises Limited",
-    "mid": "Civil \u00b7 Architectural \u00b7 Electrical",
-    "right": "Sheet A-01 \u00b7 End of Drawings"
-  }
+    "left": "© 2026 Pittman's Enterprises Limited",
+    "mid": "Civil · Architectural · Electrical",
+    "right": "Sheet A-01 · End of Drawings"
+  },
+  "credentials_line": "COR Certified · NLCA · Heavy Civil Association of NL · Bonded & Insured through Canada's Largest Surety"
 }
