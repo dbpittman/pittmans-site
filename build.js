@@ -109,6 +109,8 @@ for (const f of fs.readdirSync('templates')) {
   console.log('built', f);
 }
 
-for (const f of ['robots.txt', 'sitemap.xml', 'llms.txt', 'CNAME', 'favicon.ico']) fs.copyFileSync(f, path.join('dist', f));
+for (const f of ['robots.txt', 'llms.txt', 'CNAME', 'favicon.ico']) fs.copyFileSync(f, path.join('dist', f));
+const today = new Date().toISOString().slice(0, 10);
+fs.writeFileSync(path.join('dist', 'sitemap.xml'), fs.readFileSync('sitemap.xml', 'utf8').replace(/<lastmod>[^<]*<\/lastmod>/g, `<lastmod>${today}</lastmod>`));
 fs.cpSync('images', 'dist/images', { recursive: true });
 console.log('build complete');
