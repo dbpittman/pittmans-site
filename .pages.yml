@@ -144,7 +144,6 @@ content:
       - { name: phone, label: Phone, type: string }
       - { name: email, label: Email, type: string }
       - { name: head_office, label: "Head office line", type: string }
-      - { name: operating, label: "Operating line", type: string }
       - name: footer
         label: Footer
         type: object

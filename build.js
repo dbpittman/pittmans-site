@@ -94,7 +94,6 @@ const tokens = {
   '{{PHONE_DIGITS}}': String(settings.phone).replace(/\D/g, ''),
   '{{EMAIL}}': esc(settings.email),
   '{{HEAD_OFFICE}}': esc(settings.head_office),
-  '{{OPERATING}}': esc(settings.operating),
 };
 
 fs.rmSync('dist', { recursive: true, force: true });
