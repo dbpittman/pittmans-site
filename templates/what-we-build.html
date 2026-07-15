@@ -348,6 +348,7 @@ header.hero{
 }
 .why-card h3 span{color:var(--steel-bright)}
 .why-card p{color:var(--fog-dim);font-size:16px}
+.creds{margin-top:1px;border:1px solid var(--hair);border-top:none;padding:16px 24px;font-family:'Didact Gothic',sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--fog-dim);text-align:center}
 @media(max-width:760px){.why-grid{grid-template-columns:1fr}}
 
 /* ---------- contact ---------- */
@@ -491,7 +492,7 @@ footer::before{content:"";display:block;border-top:1px solid rgba(238,240,242,.2
 main > section:first-child{padding-top:88px}
 </style>
 <link rel="canonical" href="https://pittmans.ca/what-we-build.html">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"Pittman's Enterprises Limited","alternateName":"Pittmans","url":"https://pittmans.ca/","telephone":"+1-709-243-2666","email":"info@pittmans.ca","foundingDate":"1978","address":{"@type":"PostalAddress","addressLocality":"St. Paul's","addressRegion":"NL","addressCountry":"CA"},"areaServed":{"@type":"State","name":"Newfoundland and Labrador"},"knowsAbout":["architectural general contracting","heavy civil construction","marine infrastructure","wharf construction","dredging","breakwaters","commercial and industrial electrical contracting","drilling and blasting","aggregate crushing","remote site construction","mining exploration support","GPS machine control","drone photogrammetry","hydrographic survey"],"slogan":"Quality, from the ground up."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "GeneralContractor", "name": "Pittman's Enterprises Limited", "alternateName": "Pittmans", "url": "https://pittmans.ca/", "telephone": "+1-709-243-2666", "email": "info@pittmans.ca", "foundingDate": "1978", "address": {"@type": "PostalAddress", "addressLocality": "St. Paul's", "addressRegion": "NL", "addressCountry": "CA"}, "areaServed": {"@type": "State", "name": "Newfoundland and Labrador"}, "knowsAbout": ["architectural general contracting", "heavy civil construction", "marine infrastructure", "wharf construction", "dredging", "breakwaters", "commercial and industrial electrical contracting", "drilling and blasting", "aggregate crushing", "remote site construction", "mining exploration support", "GPS machine control", "drone photogrammetry", "hydrographic survey"], "slogan": "Quality, from the ground up.", "memberOf": [{"@type": "Organization", "name": "Newfoundland and Labrador Construction Association"}, {"@type": "Organization", "name": "Heavy Civil Association of Newfoundland and Labrador"}], "hasCredential": {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "COR (Certificate of Recognition) safety certification"}}</script>
 </head>
 <body>
 
@@ -540,6 +541,7 @@ main > section:first-child{padding-top:88px}
     <div class="why-grid reveal">
 {{WHY_CARDS}}
     </div>
+    <div class="creds reveal">{{CREDENTIALS}}</div>
   </div>
 </section>
 

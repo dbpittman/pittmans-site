@@ -68,6 +68,7 @@ const tokens = {
   '{{WHY_CARDS}}': why.cards.map(whyCard).join('\n'),
   '{{WHY_H1}}': esc(why.heading_line1),
   '{{WHY_H2}}': esc(why.heading_line2),
+  '{{CREDENTIALS}}': esc(wwb.credentials),
   '{{TITLEBLOCK}}': pages.hero.titleblock.map(tbCell).join('\n'),
   '{{HERO_L1}}': esc(pages.hero.line1),
   '{{HERO_L2}}': esc(pages.hero.line2),

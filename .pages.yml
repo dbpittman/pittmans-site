@@ -35,6 +35,7 @@ content:
       - { name: heading_line1, label: "Heading line 1", type: string }
       - { name: heading_line2, label: "Heading line 2", type: string }
       - { name: lede, label: "Intro paragraph", type: text }
+      - { name: credentials, label: "Credentials line (What We Build, under Why cards)", type: string }
       - { name: also_note, label: "Also on the record line", type: string }
       - name: why
         label: Why Pittmans block
