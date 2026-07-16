@@ -613,7 +613,9 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
     return 2*(f.width+f.height);
   }
   const P=size();
-  window.addEventListener('resize',size);
+  if(window.ResizeObserver){new ResizeObserver(size).observe(svg.parentElement)}
+  else{window.addEventListener('resize',size)}
+  if(document.fonts&&document.fonts.ready){document.fonts.ready.then(size)}
   if(!matchMedia('(prefers-reduced-motion: reduce)').matches && rect.animate){
     rect.style.strokeDasharray=P;
     rect.animate([{strokeDashoffset:P},{strokeDashoffset:0}],{duration:1600,easing:'ease-out'})
