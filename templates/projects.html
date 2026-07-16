@@ -407,6 +407,19 @@ footer::before{content:"";display:block;border-top:1px solid rgba(238,240,242,.2
 .record-head .rt{font-size:14px;letter-spacing:.22em;color:var(--fog)}
 .record-head .rt span{color:var(--red)}
 .record-head .rh{font-size:11px;letter-spacing:.18em;color:rgba(238,240,242,.45)}
+.rec-nav{display:none;gap:1px;margin-left:auto}
+.rec-nav button{
+  width:38px;height:30px;background:none;border:1px solid var(--hair);cursor:pointer;
+  color:var(--fog-dim);font-size:15px;line-height:1;padding:0;transition:color .2s,border-color .2s;
+}
+.rec-nav button:hover{color:var(--fog);border-color:var(--steel)}
+.rec-nav button:disabled{opacity:.3;cursor:default}
+.rec-nav button:disabled:hover{color:var(--fog-dim);border-color:var(--hair)}
+@media(min-width:761px){
+  .rec-nav{display:flex}
+  .record-strip{scrollbar-width:none}
+  .record-strip::-webkit-scrollbar{display:none}
+}
 .record-strip{
   margin-top:18px;display:flex;gap:1px;overflow-x:auto;
   scroll-snap-type:x mandatory;background:var(--hair);
@@ -525,6 +538,10 @@ main > section:first-child{padding-top:88px}
       <div class="record-head">
         <div class="rt">{{REC_TITLE}} <span>{{REC_RANGE}}</span></div>
         <div class="rh">{{REC_HINT}}</div>
+        <div class="rec-nav">
+          <button type="button" data-dir="-1" aria-label="Scroll the record back">&#8592;</button>
+          <button type="button" data-dir="1" aria-label="Scroll the record forward">&#8594;</button>
+        </div>
       </div>
       <div class="record-strip">
 {{RECORD}}
@@ -575,6 +592,22 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
     rect.animate([{strokeDashoffset:P},{strokeDashoffset:0}],{duration:1600,easing:'ease-out'})
       .onfinish=()=>{rect.style.strokeDasharray='none'};
   }
+})();
+(function(){
+  const strip=document.querySelector('.record-strip'),nav=document.querySelector('.rec-nav');
+  if(!strip||!nav)return;
+  const btns=nav.querySelectorAll('button');
+  function update(){
+    const max=strip.scrollWidth-strip.clientWidth-1;
+    btns[0].disabled=strip.scrollLeft<=0;
+    btns[1].disabled=strip.scrollLeft>=max;
+  }
+  btns.forEach(b=>b.addEventListener('click',()=>{
+    strip.scrollBy({left:(strip.clientWidth-90)*b.dataset.dir,behavior:'smooth'});
+  }));
+  strip.addEventListener('scroll',update,{passive:true});
+  window.addEventListener('resize',update);
+  update();
 })();
 </script>
 </body>
